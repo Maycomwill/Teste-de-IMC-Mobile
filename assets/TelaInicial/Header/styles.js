@@ -3,11 +3,11 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
     flex: 2;
     align-items: center;
-    padding: 40px 0 30px;
+    padding: 0px 0 30px;
 
 `;
 export const LogoNat = styled.Image`
-    margin: 50px 0 10px;
+    margin: 10px 0 10px;
     align-self: center;
     max-width: 300px;
     max-height: 156px;

@@ -1,11 +1,18 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    background: #f3cbcb;
-    flex: 1;
-
-
+    flex:1;
+    align-items: center;
+    background-color: #f3cbcb;
 `;
+
+export const LogoNat = styled.Image`
+    margin: 0px 0 10px;
+    align-self: center;
+    max-width: 320px;
+    max-height: 175px;
+`;
+
 export const CustomButton = styled.TouchableOpacity`
     background: #58021a;
     border-radius: 25px;
@@ -18,7 +25,7 @@ export const CustomButton = styled.TouchableOpacity`
 export const ButtonText = styled.Text`
     color:  white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 25px 20px 25px;
     

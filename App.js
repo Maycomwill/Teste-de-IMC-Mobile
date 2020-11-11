@@ -1,6 +1,7 @@
 import React from 'react';
-import TelaInicial from './assets/TelaInicial/index'
-import TelaCalculos from './assets/TelaCalculos/index'
+import TelaInicial from './assets/TelaInicial/index';
+import TelaCalculos from './assets/TelaCalculos/index';
+import TelaResultados from './assets/TelaResultados/index';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -9,9 +10,22 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
   function MyStack() {
     return (
-      <Stack.Navigator>
-        <Stack.Screen name="Teste de IMC" component={TelaInicial} />
-        <Stack.Screen name="Calculos" component={TelaCalculos} />
+      <Stack.Navigator screenOptions={{
+        headerStyle: {
+        backgroundColor: "#f3cbcb"},
+        headerTintColor: "#fff",
+        headerTitleAlign: "center",
+        headerTitleStyle: "bold"
+      }}>
+        <Stack.Screen 
+          name="Home"
+          component={TelaInicial} />
+        <Stack.Screen
+          name="Calculos"
+          component={TelaCalculos} />
+        <Stack.Screen
+          name="Resultados"
+          component={TelaResultados} />
       </Stack.Navigator>
     );
   }

@@ -13,7 +13,7 @@ export default function TelaInicial({navigation}) {
             onPress={() => {
               navigation.navigate('Calculos')
             }}>
-              <ButtonText>Clique</ButtonText>
+              <ButtonText>Vamos começar?</ButtonText>
             </CustomButton>  
           <Footer />
         </Container>
