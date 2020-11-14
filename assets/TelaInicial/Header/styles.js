@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
     flex: 2;
     align-items: center;
-    padding: 0px 0 30px;
+    padding: 80px 0 30px;
 
 `;
 export const LogoNat = styled.Image`

@@ -11,11 +11,7 @@ const Stack = createStackNavigator();
   function MyStack() {
     return (
       <Stack.Navigator screenOptions={{
-        headerStyle: {
-        backgroundColor: "#f3cbcb"},
-        headerTintColor: "#fff",
-        headerTitleAlign: "center",
-        headerTitleStyle: "bold"
+        headerShown: false,
       }}>
         <Stack.Screen 
           name="Home"
