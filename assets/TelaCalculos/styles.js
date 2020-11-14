@@ -19,6 +19,7 @@ export const Texto = styled.Text`
     color: #a62300;
     font-size: 20px;
     margin-bottom: 30px;
+    font-weight: bold;
 `;
 
 export const Texto2 = styled.Text`
@@ -33,7 +34,9 @@ export const Texto3 = styled.Text`
     margin-bottom: 30px;
 `;
 
-export const AlturaInput = styled.TextInput`
+export const AlturaInput = styled.TextInput.attrs({
+    placeholderTextColor: "#f3cbcb"
+  })`
     background-color: #a62300;
     color: #f3cbcb;
     border-radius: 10px;
@@ -43,7 +46,9 @@ export const AlturaInput = styled.TextInput`
     margin-bottom: 30px;
 `;
 
-export const PesoInput = styled.TextInput`
+export const PesoInput = styled.TextInput.attrs({
+    placeholderTextColor: "#f3cbcb"
+  })`
     background-color: #a62300;
     color: #f3cbcb;
     border-radius: 10px;

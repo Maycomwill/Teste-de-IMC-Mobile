@@ -21,16 +21,13 @@ const TelaCalculos = ({navigation}) => {
               <Texto2>
                 Nos informe sua altura
               </Texto2>
-                <AlturaInput keyboardType="number-pad">
-                  Insira sua altura em metros
-                </AlturaInput>
+                <AlturaInput placeholder="Insira sua altura em metros"
+                             keyboardType="number-pad" />
                 <Texto3>
                     Nos informe seu peso
                 </Texto3>
               <PesoInput keyboardType="number-pad"
-                        returnKeyLabel="Use">
-                      Insira seu peso em Kg
-              </PesoInput>
+                        placeholder="Insira seu peso em Kg" />
             <CustomButton onPress={() => {navigation.navigate('Resultados')}}>
               <ButtonText>
                 Calcular
