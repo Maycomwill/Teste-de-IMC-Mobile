@@ -1,5 +1,7 @@
 import React from 'react';
 import {Container,
+        Head,
+        Body,
         LogoNat,
         Texto,
         Texto2,
@@ -7,14 +9,20 @@ import {Container,
         AlturaInput,
         PesoInput,
         CustomButton,
-        ButtonText } from './styles';
+        ButtonText,
+        Footer,
+        Creditos,
+        Icone } from './styles';
 import logo from '../../assets/logo.png';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
-// import { Container } from './styles';
 
 const TelaCalculos = ({navigation}) => {
   return <Container>
-          <LogoNat source={logo} />
+          <Head>
+            <LogoNat source={logo} />
+          </Head>
+          <Body>
             <Texto>
               Vamos começar.
             </Texto>
@@ -32,7 +40,14 @@ const TelaCalculos = ({navigation}) => {
               <ButtonText>
                 Calcular
               </ButtonText>
-            </CustomButton>  
+            </CustomButton>
+          </Body>
+          <Footer>
+            <Creditos>Criado por Maycom Willams</Creditos>
+            <Icone>
+                <Icon name="copyright" size={20} color="#000" />
+            </Icone>
+          </Footer>  
         </Container>;
 }
 
