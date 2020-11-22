@@ -20,11 +20,11 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 export default function TelaInicial({navigation}) {
     return (
     <>
-        <Container>
+      <Container>
           <Header>
             <LogoNat source={logo} />
           </Header>
-          <Body>
+          <Body style={{}}>
             <Titulo>Teste do IMC</Titulo>
             <SubTitulo1>Cuidar da sua saúde é de extrema importância.</SubTitulo1>
             <SubTitulo2>E seu IMC pode ajudar bastante neste quesito.</SubTitulo2>
@@ -35,15 +35,14 @@ export default function TelaInicial({navigation}) {
               }}>
                 <ButtonText>Vamos começar?</ButtonText>
             </CustomButton>
-
           </Body>
-          <Footer>
-            <Creditos>Criado por Maycom Willams</Creditos>
-            <Icone>
-                <Icon name="copyright" size={20} color="#000" />
-            </Icone>
-          </Footer>
-        </Container>
+        <Footer>
+          <Creditos>Criado por Maycom Willams</Creditos>
+          <Icone>
+              <Icon name="copyright" size={20} color="#000" />
+          </Icone>
+        </Footer>
+      </Container>
     </>
     );
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    background: #f7dede;
+    background-color: #f7dede;
     flex: 1;
 `;
 
@@ -65,9 +65,8 @@ export const SubTitulo3 = styled.Text`
 
 export const CustomButton = styled.TouchableOpacity`
     background: #a62300;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
     align-items: center;
     justify-content: center;
     height: 85px;
@@ -88,7 +87,8 @@ export const Footer = styled.View`
     background: white;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    
 `;
 
 export const Creditos = styled.Text`

@@ -78,13 +78,12 @@ export const PesoInput = styled.TextInput.attrs({
 
 export const CustomButton = styled.TouchableOpacity`
     background: #a62300;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
     align-items: center;
     justify-content: center;
     width: 200px;
-    height: 85px;
+    height: 80px;
     margin: 30px 50px 150px; 
     
 `;

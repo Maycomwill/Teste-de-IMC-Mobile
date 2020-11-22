@@ -2,6 +2,7 @@ import React from 'react';
 import TelaInicial from './assets/TelaInicial/index';
 import TelaCalculos from './assets/TelaCalculos/index';
 import TelaResultados from './assets/TelaResultados/index';
+import gesture from 'react-native-gesture-handler'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -12,7 +13,9 @@ const Stack = createStackNavigator();
     return (
       <Stack.Navigator screenOptions={{
         headerShown: false,
-      }}>
+        gestureEnabled: true,
+      }}
+      animation="fade">
         <Stack.Screen 
           name="Home"
           component={TelaInicial} />
