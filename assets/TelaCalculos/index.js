@@ -22,7 +22,7 @@ const TelaCalculos = ({navigation}) => {
           <Head>
             <LogoNat source={logo} />
           </Head>
-          <Body>
+          <Body style={{elevation: 10,}}>
             <Texto>
               Vamos começar.
             </Texto>
@@ -36,13 +36,15 @@ const TelaCalculos = ({navigation}) => {
                 </Texto3>
               <PesoInput keyboardType="number-pad"
                         placeholder="Insira seu peso em Kg" />
-            <CustomButton onPress={() => {navigation.navigate('Resultados')}}>
+            <CustomButton 
+              style={{elevation: 2.5,}}
+              onPress={() => {navigation.navigate('Resultados')}}>
               <ButtonText>
                 Calcular
               </ButtonText>
             </CustomButton>
           </Body>
-          <Footer>
+          <Footer style={{elevation: 10,}}>
             <Creditos>Criado por Maycom Willams</Creditos>
             <Icone>
                 <Icon name="copyright" size={20} color="#000" />

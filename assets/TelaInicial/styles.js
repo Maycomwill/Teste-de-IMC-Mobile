@@ -20,7 +20,8 @@ export const LogoNat = styled.Image`
 `;
 
 export const Body = styled.View`
-    border-top-left-radius: 90px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     background: #fff;
     justify-content: center;
     align-items: center;
@@ -65,18 +66,17 @@ export const SubTitulo3 = styled.Text`
 
 export const CustomButton = styled.TouchableOpacity`
     background: #a62300;
-    border-top-left-radius: 35px;
-    border-bottom-left-radius: 35px;
+    border-radius: 30px;
     align-items: center;
     justify-content: center;
-    height: 85px;
+    height: 50px;
     margin: 30px 50px 150px;   
 `;
 
 export const ButtonText = styled.Text`
     color:  white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 25px 20px 25px;  
 `;

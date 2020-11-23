@@ -23,20 +23,19 @@ export const LogoNat = styled.Image`
 export const Body = styled.View`
     flex: 3;
     background-color: #fff;
-    border-top-left-radius: 90px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     box-shadow: 120px 150px 15px rgba(0,0,0,1);
 `;
 
 export const CustomButton = styled.TouchableOpacity`
     align-self: center;
-    border-top-left-radius: 35px;
-    border-bottom-left-radius: 35px;
+    border-radius: 30px;
     background: #a62300;
     align-items: center;
     justify-content: center;
     margin: 30px 50px 150px;
-    width: 150px;
-    height: 75px;
+    height: 50px;
     
 `;
 

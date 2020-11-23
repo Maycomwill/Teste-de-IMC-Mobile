@@ -11,14 +11,16 @@ export default function TelaResultados({navigation}) {
             <Head>
                 <LogoNat source={logo}/>
             </Head>
-            <Body>
-                <CustomButton onPress={() => {navigation.navigate('Home')}}>
+            <Body style={{elevation: 10,}}>
+                <CustomButton 
+                    style={{elevation: 2.5,}}
+                    onPress={() => {navigation.navigate('Home')}}>
                     <ButtonText>
                         Voltar
                     </ButtonText>
                 </CustomButton>
             </Body>
-            <Footer>
+            <Footer style={{elevation: 10,}}>
                 <Creditos>Criado por Maycom Willams</Creditos>
                 <Icone>
                     <Icon name="copyright" size={20} color="#000" />

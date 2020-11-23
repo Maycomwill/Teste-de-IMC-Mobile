@@ -15,7 +15,8 @@ export const Head = styled.View`
 `;
 
 export const Body = styled.View`
-    border-top-right-radius: 90px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
     background: #fff;
     justify-content: center;
     align-items: center;
@@ -78,12 +79,10 @@ export const PesoInput = styled.TextInput.attrs({
 
 export const CustomButton = styled.TouchableOpacity`
     background: #a62300;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
+    border-radius: 30px;
     align-items: center;
     justify-content: center;
-    width: 200px;
-    height: 80px;
+    height: 50px;
     margin: 30px 50px 150px; 
     
 `;
@@ -91,10 +90,9 @@ export const CustomButton = styled.TouchableOpacity`
 export const ButtonText = styled.Text`
     color:  white;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 25px 20px 25px;
-    
 `;
 
 export const Footer = styled.View`
