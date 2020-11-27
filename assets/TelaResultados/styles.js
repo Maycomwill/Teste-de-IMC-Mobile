@@ -21,11 +21,34 @@ export const LogoNat = styled.Image`
 `;
 
 export const Body = styled.View`
-    flex: 3;
-    background-color: #fff;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: 120px 150px 15px rgba(0,0,0,1);
+    background: #fff;
+    align-items: center;
+    flex:3;
+    padding-top: 50px;
+`;
+
+export const Resultado = styled.Text`
+    font-size: 20px;
+    font-weight: bold;
+    color: #636363;
+`;
+
+export const Classificacao = styled.Text`
+    font-size: 20px;
+    font-weight: bold;
+    color: #636363;
+    margin: 10px 30px 0px;
+    text-align: center;
+`;
+
+export const Disclaimer = styled.Text`
+    color: rgba(99, 99, 99, 0.25);
+    font-size: 12px;
+    text-align: center;
+    margin: 0 25px 5px;
+
 `;
 
 export const CustomButton = styled.TouchableOpacity`
@@ -34,7 +57,7 @@ export const CustomButton = styled.TouchableOpacity`
     background: #a62300;
     align-items: center;
     justify-content: center;
-    margin: 30px 50px 150px;
+
     height: 50px;
     
 `;
@@ -68,4 +91,9 @@ export const Creditos = styled.Text`
 
 export const Icone = styled.View`
     opacity: 0.1;
+`;
+
+export const Butaonessa = styled.View`
+    flex: 0.95;
+    justify-content: flex-end;
 `;

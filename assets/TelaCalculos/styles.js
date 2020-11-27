@@ -15,12 +15,12 @@ export const Head = styled.View`
 `;
 
 export const Body = styled.View`
-    border-top-right-radius: 50px;
     border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     background: #fff;
-    justify-content: center;
     align-items: center;
-    flex: 3;
+    flex:3;
+    padding-top: 50px;
 
 `;
 
@@ -32,11 +32,10 @@ export const LogoNat = styled.Image`
 `;
 
 export const Texto = styled.Text`
-    color: #636363;;
+    color: #636363;
     font-size: 28px;
-    margin-bottom: 30px;
+    margin: 0 20px 25px; 
     font-weight: bold;
-    padding-top: 175px;
 `;
 
 export const Texto2 = styled.Text`
@@ -85,6 +84,7 @@ export const CustomButton = styled.TouchableOpacity`
     height: 50px;
     margin: 30px 50px 150px; 
     
+    
 `;
 
 export const ButtonText = styled.Text`
@@ -115,4 +115,10 @@ export const Creditos = styled.Text`
 
 export const Icone = styled.View`
     opacity: 0.1;
+`;
+
+export const Resultado = styled.Text`
+    font-size: 20px;
+    font-weight: bold;
+    color: #636363;
 `;

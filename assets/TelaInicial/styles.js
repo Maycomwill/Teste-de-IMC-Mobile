@@ -23,18 +23,16 @@ export const Body = styled.View`
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     background: #fff;
-    justify-content: center;
     align-items: center;
     flex:3;
+    padding-top: 50px;
 `;
 
 export const Titulo = styled.Text`
     color: #636363;
     font-weight: bold;
     font-size: 26px;
-    margin: 0 20px 25px;
-    padding-top: 125px;
-    
+    margin: 0 20px 25px;    
 `;
 
 export const SubTitulo1 = styled.Text`

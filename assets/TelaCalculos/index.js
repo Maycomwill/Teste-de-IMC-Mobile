@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Container,
         Head,
         Body,
@@ -12,12 +12,32 @@ import {Container,
         ButtonText,
         Footer,
         Creditos,
+        Resultado,
         Icone } from './styles';
 import logo from '../../assets/logo.png';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
-const TelaCalculos = ({navigation}) => {
+const TelaCalculos = ({navigation}) => { 
+
+  const [altura, setAltura] = useState('');
+  const [peso, setPeso] = useState(''); 
+  const [conta, setConta] = useState(''); 
+
+  function calculoIMC(){
+    const n1 = Number(peso);
+    const n2 = Number(altura);
+    const resultado = (n1 / (n2 ** 2)).toFixed(2); 
+    setConta(resultado)
+}
+    useEffect(() => {
+      if(altura !== '' && peso !==''){
+        calculoIMC()
+    }
+    },[altura, peso]);
+   
+  console.log({conta});
+
   return <Container>
           <Head>
             <LogoNat source={logo} />
@@ -30,19 +50,22 @@ const TelaCalculos = ({navigation}) => {
                 Nos informe sua altura
               </Texto2>
                 <AlturaInput placeholder="Insira sua altura em metros"
-                             keyboardType="number-pad" />
+                             keyboardType="number-pad" 
+                             onChangeText={(val) => setAltura(val)}/>
                 <Texto3>
                     Nos informe seu peso
                 </Texto3>
-              <PesoInput keyboardType="number-pad"
-                        placeholder="Insira seu peso em Kg" />
+              <PesoInput  keyboardType="number-pad"
+                          placeholder="Insira seu peso em Kg"
+                          onChangeText={(val) => setPeso(val)} />
             <CustomButton 
               style={{elevation: 2.5,}}
-              onPress={() => {navigation.navigate('Resultados')}}>
+              onPress={() => {navigation.navigate('Resultados', { conta })}}>
               <ButtonText>
                 Calcular
               </ButtonText>
             </CustomButton>
+            
           </Body>
           <Footer style={{elevation: 10,}}>
             <Creditos>Criado por Maycom Willams</Creditos>
@@ -51,6 +74,6 @@ const TelaCalculos = ({navigation}) => {
             </Icone>
           </Footer>  
         </Container>;
-}
+  }
 
 export default TelaCalculos;
