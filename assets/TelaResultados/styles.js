@@ -33,21 +33,29 @@ export const Resultado = styled.Text`
     font-size: 20px;
     font-weight: bold;
     color: #636363;
+    margin-bottom: 20px;
+`;
+
+export const Texto1 = styled.Text`
+    font-size: 18px;
+    color: #636363;
+    margin: 0 25px 20px;
+    text-align: center;
 `;
 
 export const Classificacao = styled.Text`
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #636363;
-    margin: 10px 30px 0px;
+    margin: 0 0 0;
     text-align: center;
 `;
 
 export const Disclaimer = styled.Text`
-    color: rgba(99, 99, 99, 0.25);
+    color: rgba(99, 99, 99, 0.35);
     font-size: 12px;
     text-align: center;
-    margin: 0 25px 5px;
+    margin: 0 25px 10px;
 
 `;
 

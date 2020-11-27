@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "TreinarStyled",
-    "slug": "TreinarStyled",
+    "name": "Teste de IMC",
+    "slug": "teste-de-imc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/Logo_transparente.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain",
+      "backgroundColor": "#f7dede"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
